@@ -1,0 +1,41 @@
+.heading{
+    text-align: center;
+    font-weight: bolder;
+}
+.monthyear{
+    text-align: center;
+    font-weight: bolder;
+
+}
+body{
+    background-image: url("../images/jonathan-knepper-mCedy9kT8fQ-unsplash.jpg");
+    background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgba(255, 255, 255, 0.585);
+}
+ul{
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+    color: rgba(255, 255, 255, 0.585);
+    /* width:100%; */
+    /* justify-content: left; */
+    /* align-items: center; */
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    border: solid;
+    border-width: 2px;
+}
+li{
+    flex: 7;
+    /* width: 200px; */
+    border: solid;
+    list-style: none;
+    line-height: 10px;
+    width: 200px;
+    border-radius: 20px;
+    padding-left: 15px;
+    border-width: 2px;
+}
