@@ -39,8 +39,6 @@ console.log(mydate.getMonth())
 }
 function handlechange2(e){
 setmydate( new Date(e.target.value, mydate.getMonth(), mydate.getDay()))
-console.log(currentDate.getMonth())
-console.log(mydate.getMonth())
 }
 
   return (
@@ -64,10 +62,10 @@ console.log(mydate.getMonth())
         </select>
        
         <ul>
-            <p>mydate-{mydate.getMonth()} currentdate-{currentDate.getMonth()}</p>
+            {/* <p>mydate-{mydate.getMonth()} currentdate-{currentDate.getMonth()}</p> */}
         {arr.map(function(arr){
             
-            if(arr.num.toString()===dayOfMonth.toString() && mydate.getMonth()===currentDate.getMonth()-1){
+            if(arr.num.toString()===dayOfMonth.toString() && mydate.getMonth()===currentDate.getMonth() && mydate.getFullYear()===currentDate.getFullYear()){
                 console.log("here");
                 return(
                     <li style={{ borderColor: 'red' }}>
